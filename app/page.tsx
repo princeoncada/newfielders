@@ -1,113 +1,74 @@
+import CTA from "./components/CTA";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className="text-white p-12 bg-center bg-cover py-16 lg:px-24 xl:pl-[151px] xl:pb-[148px] xl:h-[720px]" 
+      style={{
+        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/DSC_7807.jpg')",
+      }}>
+        <div className="flex flex-col gap-4 xl:w-[620px] xl:h-full xl:justify-end">
+          <h1 className="font-heading font-bold text-3xl text-center xl:text-start xl:text-[56px] xl:leading-[64px]">The NewFields STEM School of Davao</h1>
+          <p className="font-body text-center xl:text-start xl:text-[18px]">Empowering the next generation of Filipino innovators, we cultivate STEM skills and critical thinking for global readiness. Join us in shaping a brighter future through innovative and collaborative education.</p>
         </div>
-      </div>
+      </section>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className="font-heading flex flex-col justify-center items-center xl:h-[720px] xl:px-[148px] gap-5 xl:gap-8 p-12 bg-[#F0F0F0]">
+        <div className="flex flex-col gap-5">
+          <h1 className="font-bold text-2xl xl:text-[56px]  xl:text-start text-[#028141]">Programs Offered</h1>
+          <div className="flex flex-row gap-3 xl:hidden">
+            <div className="flex flex-col gap-3 md:flex-row">
+              <Image src="/images/Nursery.png" alt="" width="150" height="100"></Image>
+              <Image src="/images/Kinder.png" alt="" width="150" height="100"></Image>
+            </div>
+            <div className="flex flex-col gap-3 mt-5 md:mt-0 md:flex-row">
+              <Image src="/images/PreKinder.png" alt="" width="150" height="100"></Image>
+              <Image src="/images/Elementary.png" alt="" width="150" height="100"></Image>
+            </div>
+          </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <div className="hidden xl:flex flex-row gap-6">
+              <Image src="/images/Nursery.png" alt="" width="287" height="100"></Image>
+              <Image src="/images/Kinder.png" alt="" width="287" height="100"></Image>
+              <Image src="/images/PreKinder.png" alt="" width="287" height="100"></Image>
+              <Image src="/images/Elementary.png" alt="" width="287" height="100"></Image>
+          </div>
+        </div>
+      </section>
+        
+      <section>
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full h-[100vw] md:h-[50vw] md:w-1/2 bg-cover bg-center" style={{
+              backgroundImage: "url('/images/Image.png')",
+            }}>
+          </div>
+          <div className="font-heading p-12 xl:p-[107px] md:w-1/2 md:flex flex-col justify-center">
+            <div>
+              <h1 className="font-bold text-2xl xl:text-[56px] w-2/3 xl:w-auto xl:leading-[64px] text-[#028141]">The <span className="text-[#D2A808] underline">NewFields</span> STEM School</h1>
+              <h2 className="font-medium text-sm xl:text-[20px] mb-3 xl:mb-6 xl:w-auto text-[#333333]">Empowering Filipino Youth Through STEM</h2>
+              <p className="text-xs xl:text-[14px] font-body mb-10 md:w-4/5 xl:w-11/12 text-[#555555]">At The NewFields STEM School of Davao, we are dedicated to nurturing critical thinking and problem-solving skills in Filipino youth. Our innovative approach prepares students to become future leaders and innovators, equipped for global competitiveness.</p>
+              <Link href="#" className="text-sm xl:text-[18px] bg-[#028141] text-white px-4 xl:px- py-2 xl:py-4">Read more</Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <section>
+            <div>
+              
+            </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      <section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </section>
+
+      <section>
+
+      </section>
+      <CTA />
+    </>
   );
 }
