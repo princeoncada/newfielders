@@ -1,6 +1,6 @@
-export default function CTA() {
+export default function Cta() {
     return (
-        <div className="h-64 xl:h-[360px] text-white font-heading px-24 flex flex-col justify-center items-center gap-5 xl:gap-8 text-center" 
+        <div className="h-64 xl:h-[480px] text-white font-heading px-24 flex flex-col justify-center items-center gap-5 xl:gap-8 text-center" 
         style={{
             backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/DSC_7818.jpg')",
             backgroundSize: "120%",
