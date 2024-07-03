@@ -4,7 +4,7 @@ export default function Hero() {
 			className="text-white p-12 bg-center bg-cover py-16 lg:px-24 xl:pl-[151px] xl:pb-[148px] xl:h-[720px]"
 			style={{
 				backgroundImage:
-					"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/hero better.jpg')",
+					"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/DSC_7807.png')",
 			}}
 		>
 			<div className="flex flex-col gap-4 xl:w-[620px] xl:h-full xl:justify-end">
