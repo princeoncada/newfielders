@@ -1,4 +1,4 @@
-export default function Cta() {
+export default function CTA() {
     return (
         <div className="h-64 xl:h-[480px] text-white font-heading px-24 flex flex-col justify-center items-center gap-5 xl:gap-8 text-center" 
         style={{
