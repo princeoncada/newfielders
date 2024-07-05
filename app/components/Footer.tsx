@@ -36,9 +36,9 @@ export default function Footer() {
                 </div>
             </footer>
 
-            <footer className="bg-[#028141] text-white h-[400px] font-heading p-5 py-[117px] text-lg hidden xl:flex flex-row justify-center items-center">
-                <div className="mr-7"><Image src="/images/TNFSSD LOGO.png" alt="none" width="210" height="100"/></div>
-                <div className="flex flex-col h-full justify-between mr-[180px]">
+            <footer className="bg-[#028141] text-white h-[320px] font-heading p-5 text-sm hidden xl:flex flex-row justify-evenly items-center">
+                <div><Image src="/images/TNFSSD LOGO.png" alt="none" width="180" height="100"/></div>
+                <div className="flex flex-col justify-between h-[140px] text-center">
                     <div>
                         P9B, BLK 44, LOTS 7-16, DECA Homes
                         <br />
@@ -53,7 +53,7 @@ export default function Footer() {
                     </div>
                 </div>
                 
-                <div className="flex flex-col h-full justify-between">
+                <div className="flex flex-col justify-between h-[140px]">
                     <div className="flex flex-row gap-12">
                         <div className="flex flex-col gap-3">
                             <Link href="#">About Us</Link>
