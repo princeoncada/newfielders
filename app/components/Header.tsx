@@ -70,26 +70,27 @@ export default function Header() {
 				</div>
 			</menu>
 
+
 			<header className="relative bg-white hidden xl:flex flex-row justify-between p-5 px-10 z-50 font-heading">
 				<div className="flex flex-row gap-4">
 					<div className="flex items-center">
 						<Image
 							src="/images/TNFSSD LOGO.png"
 							alt="none"
-							width="125"
+							width="100"
 							height="100"
 						/>
 					</div>
 					<div className="flex flex-col justify-center">
-						<div className="text-[28px] font-medium text-[#00582C]">
+						<div className="text-[24px] font-medium text-[#00582C]">
 							The NewField&apos;s STEM
 						</div>
-						<div className="text-[20px] text-[#333333]">
+						<div className="text-[16px] text-[#333333]">
 							School of Davao
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-row items-center gap-8 text-[#017E3F] text-[20px]">
+				<div className="flex flex-row items-center gap-8 text-[#017E3F] text-[1rem]">
 					<Link href="#">Home</Link>
 					<Link href="#">About Us</Link>
 					<Link href="#">Admissions</Link>

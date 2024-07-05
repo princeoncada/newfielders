@@ -36,8 +36,8 @@ export default function Footer() {
                 </div>
             </footer>
 
-            <footer className="bg-[#028141] text-white h-[416px] font-heading p-5 py-[117px] text-xl hidden xl:flex flex-row justify-center items-center">
-                <div className="mr-7"><Image src="/images/TNFSSD LOGO.png" alt="none" width="230" height="100"/></div>
+            <footer className="bg-[#028141] text-white h-[400px] font-heading p-5 py-[117px] text-lg hidden xl:flex flex-row justify-center items-center">
+                <div className="mr-7"><Image src="/images/TNFSSD LOGO.png" alt="none" width="210" height="100"/></div>
                 <div className="flex flex-col h-full justify-between mr-[180px]">
                     <div>
                         P9B, BLK 44, LOTS 7-16, DECA Homes

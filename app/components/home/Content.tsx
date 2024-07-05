@@ -5,21 +5,21 @@ export default function Content() {
 		<section>
 			<div className="flex flex-col md:flex-row">
 				<div
-					className="w-full h-[100vw] md:h-[50vw] md:w-1/2 bg-cover bg-center"
+					className="w-full h-[100vw] md:h-auto md:w-1/2 bg-cover bg-center"
 					style={{
 						backgroundImage: "url('/images/Image.png')",
 					}}
 				></div>
-				<div className="font-heading p-12 xl:p-[107px] md:w-1/2 md:flex flex-col justify-center lg:pl-14">
+				<div className="font-heading px-12 pt-8 pb-12 xl:p-[107px] md:w-1/2 md:flex flex-col justify-center lg:pl-14">
 					<div>
-						<h1 className="font-bold text-2xl xl:text-[56px] w-2/3 mb-2 xl:w-auto xl:leading-[64px] text-[#028141]">
+						<h1 className="font-bold text-2xl xl:text-[48px] w-2/3 mb-2 xl:w-auto xl:leading-[64px] text-[#028141]">
 							The{" "}
 							<span className="text-[#D2A808] underline">
 								NewFields
 							</span>{" "}
 							<div>STEM School</div>
 						</h1>
-						<h2 className="font-medium text-sm xl:text-[23px] mb-3 xl:mb-10 xl:w-auto text-[#333333] md:w-9/12">
+						<h2 className="font-medium text-sm xl:text-[19px] mb-3 xl:mb-10 xl:w-auto text-[#333333] md:w-9/12">
 							Empowering Filipino Youth Through STEM
 						</h2>
 						<p className="text-xs xl:text-[18px] xl:leading-[25px] font-body mb-10 md:w-4/5 xl:w-auto text-[#555555]">
@@ -32,7 +32,7 @@ export default function Content() {
 						</p>
 						<Link
 							href="#"
-							className="text-sm xl:text-[18px] bg-[#028141] text-white px-4 xl:px-6 py-2 xl:py-3"
+							className="text-sm xl:text-[14px] bg-[#028141] text-white px-4 xl:px-6 py-2 xl:py-3"
 						>
 							Read more
 						</Link>

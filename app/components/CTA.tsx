@@ -9,10 +9,10 @@ export default function CTA() {
 				backgroundPosition: "50% 15%",
 			}}
 		>
-			<h1 className="text-2xl font-bold xl:text-[56px]">
+			<h1 className="text-2xl font-bold xl:text-[48px]">
 				Kickstart your child&apos;s journey
 			</h1>
-			<button className="bg-[#D2A808] text-lg font-medium xl:py-[18px] xl:px-[48px] py-2 px-4 xl:text-[32px]">
+			<button className="bg-[#D2A808] text-lg font-medium xl:py-[14px] xl:px-[40px] py-2 px-4 xl:text-[24px]">
 				Join us
 			</button>
 		</div>
