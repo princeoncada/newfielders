@@ -56,8 +56,8 @@ export default function Footer() {
                 <div className="flex flex-col justify-between h-[140px]">
                     <div className="flex flex-row gap-12">
                         <div className="flex flex-col gap-3">
-                            <Link href="#">About Us</Link>
-                            <Link href="#">Admission</Link>
+                            <Link href="/">Home</Link>
+                            <Link href="/about">About Us</Link>
                             <Link href="#">Events</Link>
                         </div>
                         <div className="flex flex-col gap-3">

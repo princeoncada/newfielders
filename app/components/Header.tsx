@@ -26,7 +26,7 @@ export default function Header() {
 					</div>
 					<div>
 						<div className="text-lg font-medium text-[#00582C]">
-							The NewField&apos;s STEM
+							The NewFields STEM
 						</div>
 						<div className="text-sm text-[#333333]">
 							School of Davao
@@ -61,8 +61,8 @@ export default function Header() {
 						showMenu ? "" : "-translate-y-64"
 					} font-heading gap-3 text-sm`}
 				>
-					<Link href="#">Home</Link>
-					<Link href="#">About Us</Link>
+					<Link href="/">Home</Link>
+					<Link href="/about">About Us</Link>
 					<Link href="#">Admissions</Link>
 					<Link href="#">News</Link>
 					<Link href="#">NewFielders Life</Link>
@@ -91,8 +91,8 @@ export default function Header() {
 					</div>
 				</div>
 				<div className="flex flex-row items-center gap-8 text-[#017E3F] text-[1rem]">
-					<Link href="#">Home</Link>
-					<Link href="#">About Us</Link>
+					<Link href="/">Home</Link>
+					<Link href="/about">About Us</Link>
 					<Link href="#">Admissions</Link>
 					<Link href="#">News</Link>
 					<Link href="#">NewFielders Life</Link>
