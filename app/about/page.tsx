@@ -38,7 +38,7 @@ export default function About() {
                         </span>{" "}
                         from early childhood through 12th grade. Our curriculum
                         focuses on the technology and engineering design
-                        process, enhancing students' analytical,
+                        process, enhancing students&apos; analytical,
                         problem-solving, experimentation, collaboration, and
                         communication skills. We nurture their creative talents
                         and imagination, foster character education and good
