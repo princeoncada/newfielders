@@ -11,7 +11,7 @@ export default function News() {
 
 				<div className="flex flex-col md:flex-row gap-4">
 					<div>
-						<Link href={`*`}>
+						<Link href={`/news`}>
 							<Image
 								src={`/images/welbac.png`}
 								alt=""
@@ -21,7 +21,7 @@ export default function News() {
 						</Link>
 					</div>
 					<div>
-						<Link href={`*`}>
+						<Link href={`/news`}>
 							<Image
 								src={`/images/julact.png`}
 								alt=""
@@ -32,7 +32,7 @@ export default function News() {
 					</div>
 				</div>
 
-				<Link href={`*`} className="flex flex-row gap-2 h-auto">
+				<Link href={`/news`} className="flex flex-row gap-2 h-auto">
 					<div className="hidden md:flex w-[250px] bg-b-workshop bg-cover h-[250px] bg-center rounded-tr-md rounded-bl-md"></div>
 					<div className="flex flex-col bg-gradient-to-r from-white w-full gap-1 p-4 lg:px-8 justify-center">
 						<div className="flex flex-row items-end gap-2">

@@ -63,10 +63,10 @@ export default function Header() {
 				>
 					<Link href="/">Home</Link>
 					<Link href="/about">About Us</Link>
-					<Link href="#">Admissions</Link>
-					<Link href="#">News</Link>
-					<Link href="#">NewFielders Life</Link>
-					<Link href="#">Contact Us</Link>
+					<Link href="/admission">Admissions</Link>
+					<Link href="/news">News</Link>
+					<Link href="/newfielders">NewFielders Life</Link>
+					<Link href="/contact">Contact Us</Link>
 				</div>
 			</menu>
 
@@ -83,7 +83,7 @@ export default function Header() {
 					</div>
 					<div className="flex flex-col justify-center">
 						<div className="text-[24px] font-medium text-[#00582C]">
-							The NewField&apos;s STEM
+							The NewFields STEM
 						</div>
 						<div className="text-[16px] text-[#333333]">
 							School of Davao
@@ -93,10 +93,10 @@ export default function Header() {
 				<div className="flex flex-row items-center gap-8 text-[#017E3F] text-[1rem]">
 					<Link href="/">Home</Link>
 					<Link href="/about">About Us</Link>
-					<Link href="#">Admissions</Link>
-					<Link href="#">News</Link>
-					<Link href="#">NewFielders Life</Link>
-					<Link href="#">Contact Us</Link>
+					<Link href="/admission">Admissions</Link>
+					<Link href="/news">Events</Link>
+					<Link href="/newfielders">NewFielders Life</Link>
+					<Link href="/contact">Contact Us</Link>
 				</div>
 			</header>
 		</>

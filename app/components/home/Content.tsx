@@ -31,7 +31,7 @@ export default function Content() {
 							competitiveness.
 						</p>
 						<Link
-							href="#"
+							href="/newfielders"
 							className="text-sm xl:text-[14px] bg-[#028141] text-white px-4 xl:px-6 py-2 xl:py-3"
 						>
 							Read more

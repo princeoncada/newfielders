@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function CTA() {
     return (
 		<div
@@ -12,9 +14,9 @@ export default function CTA() {
 			<h1 className="text-2xl font-bold xl:text-[48px]">
 				Kickstart your child&apos;s journey
 			</h1>
-			<button className="bg-[#D2A808] text-lg font-medium xl:py-[14px] xl:px-[40px] py-2 px-4 xl:text-[24px]">
+			<Link href="/admission" className="bg-[#D2A808] text-lg font-medium xl:py-[14px] xl:px-[40px] py-2 px-4 xl:text-[24px]">
 				Join us
-			</button>
+			</Link>
 		</div>
 	);
 }

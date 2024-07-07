@@ -20,13 +20,13 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-row gap-5">
                     <div className="flex flex-col gap-1">
-                        <Link href="#">About Us</Link>
-                        <Link href="#">Admission</Link>
-                        <Link href="#">Events</Link>
+                        <Link href="/about">About Us</Link>
+                        <Link href="/admission">Admissions</Link>
+                        <Link href="/news">Events</Link>
                     </div>
                     <div className="flex flex-col gap-1">
-                        <Link href="#">NewFielder&apos;s Life</Link>
-                        <Link href="#">Contact Us</Link>
+                        <Link href="/newfielders">NewFielders Life</Link>
+                        <Link href="/contact">Contact Us</Link>
                     </div>
                 </div>
                 <div className="flex flex-row gap-1 text-2xl">
@@ -56,13 +56,13 @@ export default function Footer() {
                 <div className="flex flex-col justify-between h-[140px]">
                     <div className="flex flex-row gap-12">
                         <div className="flex flex-col gap-3">
-                            <Link href="/">Home</Link>
                             <Link href="/about">About Us</Link>
-                            <Link href="#">Events</Link>
+                            <Link href="/admission">Admissions</Link>
+                            <Link href="/news">Events</Link>
                         </div>
                         <div className="flex flex-col gap-3">
-                            <Link href="#">NewFielder&apos;s Life</Link>
-                            <Link href="#">Contact Us</Link>
+                            <Link href="/newfielders">NewFielders Life</Link>
+                            <Link href="/contact">Contact Us</Link>
                         </div>
                     </div>
                     
