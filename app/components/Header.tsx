@@ -14,7 +14,7 @@ export default function Header() {
 
     return (
 		<>
-			<header className="relative bg-white flex flex-row justify-between p-5 z-50 font-heading xl:hidden">
+			<header className="fixed bg-white flex flex-row justify-between p-5 z-50 font-heading xl:hidden w-full">
 				<div className="flex flex-row gap-2">
 					<div className="flex items-center">
 						<Image
@@ -55,9 +55,9 @@ export default function Header() {
 				</button>
 			</header>
 
-			<menu className="xl:hidden">
+			<menu className="xl:hidden fixed top-20 z-20 w-full">
 				<div
-					className={`absolute w-screen max-w-full text-[#333333] bg-[#F0F0F0] flex flex-col items-end p-5 transition-all duration-300 ease-in-out ${
+					className={`z-10 absolute w-screen max-w-full bg-[#F0F0F0] text-[#333333]  flex flex-col items-end p-5 transition-all duration-300 ease-in-out ${
 						showMenu ? "" : "-translate-y-64"
 					} font-heading gap-3 text-sm`}
 				>
