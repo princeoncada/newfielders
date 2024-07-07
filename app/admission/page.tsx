@@ -170,7 +170,7 @@ export default function Admissions() {
                         <SubArticle>
                             Beginning in Grade 4, students at NewFields are
                             introduced to Science investigatory projects, which
-                            form a cornerstone of the school's emphasis on
+                            form a cornerstone of the school&apos;s emphasis on
                             hands-on learning and scientific inquiry. These
                             projects encourage students to engage actively with
                             the scientific method, from hypothesis formation to
