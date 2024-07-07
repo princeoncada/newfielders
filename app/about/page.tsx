@@ -1,6 +1,8 @@
 import Hero from '../components/Hero';
+import CTA from '../components/CTA';
 import Article from '../components/Article';
 import SubArticle from '../components/SubArticle';
+import QuickLinks from '../components/QuickLinks';
 import Image from "next/image";
 
 export default function About() {
@@ -9,12 +11,9 @@ export default function About() {
             <Hero title="About Us" />
 
             <div className="flex flex-row px-8 lg:px-28 h-auto relative bottom-16 gap-5">
-                <section className="hidden w-1/3 lg:flex flex-col gap-5">
-                    {/* for shynn */}
-                    <div className="w-full h-[236px] bg-green-400"></div>
-                    <div className="w-full h-[236px] bg-green-400"></div>
-                    <div className="w-full h-[236px] bg-green-400"></div>
-                </section>
+
+                <QuickLinks />
+
                 <section className="bg-white w-full lg:2/3 p-8 flex flex-col gap-5 lg:gap-8 lg:py-14">
                     <Article title="Vision" flex={false}>
                         <span className="font-bold">
@@ -361,6 +360,7 @@ export default function About() {
 
                 </section>
             </div>
+            <CTA />
         </div>
     );
 }
