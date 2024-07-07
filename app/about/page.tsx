@@ -12,7 +12,7 @@ export default function About() {
 
             <div className="flex flex-row px-8 lg:px-28 h-auto relative bottom-16 gap-5">
 
-                <QuickLinks />
+                <QuickLinks/>
 
                 <section className="bg-white w-full lg:2/3 p-8 flex flex-col gap-5 lg:gap-8 lg:py-14">
                     <Article title="Vision" flex={false}>
