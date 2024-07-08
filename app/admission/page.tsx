@@ -18,7 +18,7 @@ export default function Admissions() {
 
 					<video
 						className="-my-4 lg:-my-8"
-						src="/videos/vid-news.mp4"
+						src="/videos/vid-admission.mp4"
 						autoPlay
 						muted
 						loop
