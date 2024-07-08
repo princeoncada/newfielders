@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Gallery() {
-    return (
+	return (
 		<section className="p-12 xl:px-[96px] xl:py-[80px] font-heading">
 			<div>
 				<h1 className="text-2xl font-bold mb-2 text-[#028141] xl:text-[48px] xl:mb-5">
@@ -15,10 +15,11 @@ export default function Gallery() {
 								First Quarter Activities
 							</h1>
 							<Image
+								className="rounded-md shadow-lg"
 								src="/images/first q.jpg"
 								alt=""
 								width="1000"
-								height="900"
+								height="800"
 							></Image>
 						</Link>
 						<Link href="https://www.youtube.com/watch?v=ia1cSZCSbCU&ab_channel=TheNewFieldsSTEMSchoolofDavao">
@@ -26,6 +27,7 @@ export default function Gallery() {
 								Second Quarter Activities
 							</h1>
 							<Image
+								className="rounded-md shadow-lg"
 								src="/images/second q.jpg"
 								alt=""
 								width="1000"
@@ -39,6 +41,7 @@ export default function Gallery() {
 								Third & Fourth Quarter Activities
 							</h1>
 							<Image
+								className="rounded-md shadow-lg"
 								src="/images/third q.jpg"
 								alt=""
 								width="1000"
@@ -50,6 +53,7 @@ export default function Gallery() {
 								Academic Interschool Activities
 							</h1>
 							<Image
+								className="rounded-md shadow-lg"
 								src="/images/fourth q.jpg"
 								alt=""
 								width="1000"
