@@ -1,8 +1,8 @@
-import Hero from '../components/Hero';
-import CTA from '../components/CTA';
-import Article from '../components/Article';
-import SubArticle from '../components/SubArticle';
-import QuickLinks from '../components/QuickLinks';
+import Hero from "../components/Hero";
+import CTA from "../components/CTA";
+import Article from "../components/Article";
+import SubArticle from "../components/SubArticle";
+import QuickLinks from "../components/QuickLinks";
 import Image from "next/image";
 
 export default function About() {
@@ -11,8 +11,7 @@ export default function About() {
             <Hero title="About Us" />
 
             <div className="flex flex-row px-8 lg:px-28 h-auto relative bottom-16 gap-5">
-
-                <QuickLinks/>
+                <QuickLinks />
 
                 <section className="bg-white w-full lg:2/3 p-8 flex flex-col gap-5 lg:gap-8 lg:py-14">
                     <Article title="Vision" flex={false}>
@@ -21,7 +20,8 @@ export default function About() {
                             academically successful, scientifically literate,
                             socially aware, and respectful, responsible global
                             citizens.
-                        </span>{" "}This goal is achieved through student-centered,
+                        </span>{" "}
+                        This goal is achieved through student-centered,
                         collaborative, and problem-based learning processes,
                         facilitated by passionate and knowledgeable educators.
                         Our educators are trained in science, technology,
@@ -46,14 +46,66 @@ export default function About() {
                     </Article>
 
                     <Article title="Core Values">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Praesent quis cursus diam. Nunc convallis elit eget est
-                        cursus porttitor. Cras venenatis faucibus arcu, et porta
-                        sapien consectetur in. Mauris ultrices elementum libero,
-                        eget viverra nulla auctor ac. Pellentesque ligula dui,
-                        sodales eu finibus nec, ultrices ac mi. Vestibulum a
-                        cursus sapien. Nullam ut eros mauris. Nam pellentesque
-                        nisi sed tellus semper, at venenatis mauris efficitur.
+                        <ul className="list-decimal flex flex-col pl-4 lg:pl-7 text-start">
+                            <li className="text-[16px] lg:text-[24px] font-medium">RESPECTFUL</li>
+                            <ul className="list-[lower-alpha] pl-4 text-[14px] lg:text-[18px]">
+                                <li>Waits for one&apos;s turn</li>
+                                <li>Listens when others are talking</li>
+                                <li>
+                                    Respects one&apos;s feelings and those of
+                                    others
+                                </li>
+                                <li>Follows rules</li>
+                                <li>
+                                    Refrain from using rude, insulting and
+                                    vulgar actions/words
+                                </li>
+                                <li>
+                                    Does not engage in any form of bullying,
+                                    fighting, vandalism, <br className="hidden lg:flex" /> distasteful
+                                    jokes/pranks and rough plays
+                                </li>
+                                <li>Tells the truth</li>
+                                <li>Talks and acts politely</li>
+                            </ul>
+                            <li className="pt-4 text-[16px] lg:text-[24px] font-medium">RESPONSIBLE</li>
+                            <ul className="list-[lower-alpha] pl-4 text-[14px] lg:text-[18px]">
+                                <li>Accepts responsibility</li>
+                                <li>Takes care of oneself by having good health and cleanliness habits</li>
+                                <li>Takes care of one&apos;s things, school materials, and facilities</li>
+                                <li>Returns borrowed things</li>
+                                <li>Starts and finishes work</li>
+                                <li>Keeps things in order during and after work</li>
+                                <li>Keeps one&apos;s work neat and orderly</li>
+                                <li>Makes good choices</li>
+                                <li>Does what is right</li>
+                            </ul>
+                            <li className="pt-4 text-[16px] lg:text-[24px] font-medium
+                            
+                            
+                            
+                            
+                            ">REFLECTIVE</li>
+                            <ul className="list-[lower-alpha] pl-4 text-[14px] lg:text-[18px]">
+                                <li>Takes time to think about one&apos;s actions and their effects</li>
+                                <li>Gives and takes feedback from others</li>
+                                <li>Shares learnings</li>
+                            </ul>
+                            <li className="pt-4 text-[16px] lg:text-[24px] font-medium
+                            
+                            
+                            
+                            
+                            ">COLLABORATIVE</li>
+                            <ul className="list-[lower-alpha] pl-4 text-[14px] lg:text-[18px]">
+                                <li>Works and plays well with others</li>
+                                <li>Cooperates during activities</li>
+                                <li>Volunteers to assist others</li>
+                                <li>Recognizes and accepts the contribution of others toward a goal/activity</li>
+                                <li>Accepts defeats and celebrates other&apos;s success</li>
+                                <li>Willing to lead or follow as needed</li>
+                            </ul>
+                        </ul>
                     </Article>
 
                     <Image
@@ -349,7 +401,7 @@ export default function About() {
                             into well-rounded individuals.
                         </p>
                     </Article>
-                    
+
                     <Image
                         className="py-2"
                         src="/images/placeholder.png"
@@ -357,7 +409,6 @@ export default function About() {
                         height={100}
                         alt="placeholder"
                     ></Image>
-
                 </section>
             </div>
             <CTA />

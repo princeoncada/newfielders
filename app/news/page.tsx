@@ -4,6 +4,7 @@ import CTA from "../components/CTA";
 import Article from "../components/Article";
 import SubArticle from "../components/SubArticle";
 import QuickLinks from "../components/QuickLinks";
+import Gallery from "./components/Gallery";
 import Image from "next/image";
 
 export default function News() {
@@ -68,30 +69,15 @@ export default function News() {
               Festival, Spelling Bee, and DEPED Literary Festival, underscoring
               our dedication to academic excellence.
             </SubArticle>
-            <div>
-              <p>
-                Relive these memorable moments by watching our event recaps:
-              </p>
-                {/* Thumbnails?? how  */}
-              <ul className="list-disc ps-7 text-base text-[#017E3F]">
-                <li>
-                  <a href="#">First Quarter Activities</a>
-                </li>
-                <li>
-                  <a href="#">Second Quarter Activities</a>
-                </li>
-                <li>
-                  <a href="#">Third and Fourth Quarter Activities</a>
-                </li>
-                <li>
-                  <a href="#">Leadership and Inter School Activities</a>
-                </li>
-              </ul>
-            </div>
+            <p>
+              Relive these memorable moments by watching our event recaps:
+            </p>
+            <Gallery />
           </Article>
 
-            {/* I don't know where to put "Learning" */}
-          <Article title="The NewField's Way"> 
+          
+
+          <Article title="Learning the NewField's Way"> 
             At ACCESSEDU, INC. (The NewFields STEM School of Davao), we make
             education an exciting journey of discovery. Our innovative approach,
             from Nursery to Grade 6, aligns with the DEPED curriculum and
