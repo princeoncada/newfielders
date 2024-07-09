@@ -24,6 +24,8 @@ const config: Config = {
       body: ["var(--font-roboto)"]
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 };
 export default config;
