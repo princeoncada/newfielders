@@ -80,11 +80,11 @@ const Carousel = () => {
 
             <div className="flex flex-row overflow-hidden bg-[#F0F0F0]">
                 {slides.map((slide, index) => (
-                    <div className="flex flex-col md:flex-row min-w-full h-full transition-transform ease-in-out duration-500 md:w-[4.9rem]" style={{
+                    <div key={slide.name} className="flex flex-col md:flex-row min-w-full h-full transition-transform ease-in-out duration-500 md:w-[4.9rem]" style={{
                         transform: `translateX(${-(currentSlide) * 100}%)`
                     }}>
                         <div className="bg-green-700 h-1 md:w-2 md:h-auto"></div>
-                        <img key={slide.name} src={slide.image} alt={slide.name} className="md:w-1/2 h-56 object-cover object-center" />
+                        <img src={slide.image} alt={slide.name} className="md:w-1/2 h-56 object-cover object-center" />
                         <div className="p-2 md:p-4 flex flex-col justify-center gap-2">
                             <div className="flex flex-col font-heading">
                                 <h3 className="text-[#017E3F] text-[22px] md:text-[26px] md:font-semibold leading-7">{slide.name}</h3>
