@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function () {
+export default function Groups() {
     return (
         <div className="flex flex-col gap-4 mt-4">
             <div className="flex flex-col gap-4 lg:flex-row max-w-full justify-center">

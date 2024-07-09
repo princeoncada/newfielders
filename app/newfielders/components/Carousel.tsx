@@ -84,7 +84,7 @@ const Carousel = () => {
                         transform: `translateX(${-(currentSlide) * 100}%)`
                     }}>
                         <div className="bg-green-700 h-1 md:w-2 md:h-auto"></div>
-                        <img src={slide.image} alt={slide.name} className="md:w-1/2 h-56 object-cover object-center" />
+                        <img key={slide.name} src={slide.image} alt={slide.name} className="md:w-1/2 h-56 object-cover object-center" />
                         <div className="p-2 md:p-4 flex flex-col justify-center gap-2">
                             <div className="flex flex-col font-heading">
                                 <h3 className="text-[#017E3F] text-[22px] md:text-[26px] md:font-semibold leading-7">{slide.name}</h3>

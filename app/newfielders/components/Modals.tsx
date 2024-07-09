@@ -8,7 +8,7 @@ export default function Modals() {
                         A vibrant community for students who love to express
                         themselves through music. Members gather to practice
                         vocal techniques, learn new songs, and perform at school
-                        events and competitions. Whether you're a seasoned
+                        events and competitions. Whether you&apos;re a seasoned
                         singer or just starting out, this club provides a
                         supportive environment to develop your talents and share
                         your passion for singing.
