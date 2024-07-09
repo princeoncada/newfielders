@@ -70,6 +70,7 @@ export default function Header() {
 				</div>
 			</menu>
 
+			<div className="py-10 lg:hidden"></div>
 
 			<header className="relative bg-white hidden xl:flex flex-row justify-between p-5 px-10 z-50 font-heading">
 				<div className="flex flex-row gap-4">
