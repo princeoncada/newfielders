@@ -17,26 +17,31 @@ export default function Contact() {
           <Article title="We've been waiting for you!">
             <SubArticle title="Send us a Message">
 
-                {/* di man sya lisod hahhaa */}
-              <label className="relative text-gray-400 focus-within:text-gray-600 block">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="pointer-events-none w-8 h-8 absolute top-1/2 transform -translate-y-1/2 left-3"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
+              <label className="relative text-gray-400 focus-within:text-gray-600 flex flex-row justify-start">
+                <Image className="pointer-events-none w-7 h-7 text-red-300 absolute top-1/2 transform -translate-y-1/2 left-2.5" src={`/svg/user.svg`} alt="" width={100} height={100} />
 
                 <input
                   type="email"
                   name="email"
                   id="email"
-                  placeholder="email@kemuscorp.com"
-                  className="form-input border border-gray-900 py-1 bg-white placeholder-gray-400 text-gray-500 appearance-none w-fit block pl-14 focus:outline-none"
+                  placeholder="Name"
+                  className="form-input border border-gray-900 py-3 bg-white placeholder:text-[#555555] text-black appearance-none w-fit block pl-[42px] focus:outline-none text-[20px]"
                 />
               </label>
+
+              <label className="relative text-gray-400 focus-within:text-gray-600 flex flex-row justify-start">
+                <Image className="pointer-events-none w-7 h-7 text-red-300 absolute top-1/2 transform -translate-y-1/2 left-2.5" src={`/svg/user.svg`} alt="" width={100} height={100} />
+
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Name"
+                  className="form-input border border-gray-900 py-3 bg-white placeholder:text-[#555555] text-black appearance-none w-fit block pl-[42px] focus:outline-none text-[20px]"
+                />
+              </label>
+
+              
             </SubArticle>
             <SubArticle title="Contact Us Directly">
             <div className="pt-2">
