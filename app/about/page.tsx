@@ -17,8 +17,8 @@ export default function About() {
 		<div className="bg-[#F0F0F0]" style={BG_STYLE}>
 			<Hero title="About Us" />
 
-			<div className=" max-w-[1280px] mx-auto">
-				<div className="flex flex-row px-8 lg:px-28 h-auto relative bg-[#F0F0F0] bottom-16 gap-5 py-[64px]">
+			<div className=" max-w-[1280px] mx-auto p-6">
+				<div className="flex flex-row lg:px-28 h-auto relative bg-[#F0F0F0] bottom-16 gap-5 lg:py-[64px]">
 					<section className="hidden lg:block w-1/3">
 						<div className="flex flex-col gap-5 sticky top-28">
 							<Link href={`/contact`} className="w-full">
