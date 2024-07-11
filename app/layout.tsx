@@ -31,7 +31,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${montserrat.variable} ${roboto.variable} scroll-p-[150px] scroll-smooth`}>
+        <html lang="en" className={`${montserrat.variable} ${roboto.variable} scroll-p-[118px] scroll-smooth`}>
             <head>
               <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
             </head>

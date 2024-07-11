@@ -64,7 +64,7 @@ export default function Header() {
 					<Link href="/about">About Us</Link>
 					<Link href="/admission">Admissions</Link>
 					<Link href="/news">News</Link>
-					<Link href="/newfielders">NewFielders Life</Link>
+					<Link href="/newfielders">NewFielder&apos;s Life</Link>
 					<Link href="/contact">Contact Us</Link>
 				</div>
 			</menu>
@@ -93,8 +93,8 @@ export default function Header() {
 						<Link href="/">Home</Link>
 						<Link href="/about">About Us</Link>
 						<Link href="/admission">Admissions</Link>
-						<Link href="/news">Events</Link>
-						<Link href="/newfielders">NewFielders Life</Link>
+						<Link href="/news">News</Link>
+						<Link href="/newfielders">NewFielder&apos;s Life</Link>
 						<Link href="/contact">Contact Us</Link>
 					</div>
 				</div>

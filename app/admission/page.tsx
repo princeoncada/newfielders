@@ -2,22 +2,65 @@ import Hero from "../components/Hero";
 import CTA from "../components/CTA";
 import Article from "../components/Article";
 import SubArticle from "../components/SubArticle";
-import QuickLinks from "../components/QuickLinks";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Admissions() {
-    return (
+	return (
 		<div className="bg-[#F0F0F0] max-w-full">
 			<Hero title="Admissions" />
 
 			<div className="flex flex-row px-8 lg:px-28 h-auto relative bottom-16 gap-5 max-w-[1280px] mx-auto">
-				<QuickLinks currentPage="admission" />
+				<section className="hidden lg:block w-1/3">
+					<div className="flex flex-col gap-5 sticky top-28">
+						<Link href={`/contact`} className="w-full">
+							<Image
+								src={`/svg/Contact Us.svg`}
+								width={1000}
+								height={1000}
+								alt="contact-us-cta"
+							/>
+						</Link>
+						<div className="flex flex-col gap-3.5 w-full">
+							<h1 className="font-heading text-[#00582C] text-[28px] font-medium">
+								Contents
+							</h1>
+							<div className="flex flex-col gap-2 font-body text-[#333333] text-[18px]">
+								<Link href={`#choose-section`}>
+									Why Choose Us?
+								</Link>
+								<Link href={`#pre-section`}>
+									Programs: Pre-School
+								</Link>
+								<Link href={`#grade-section`}>
+									Programs: Grade School
+								</Link>
+								<Link href={`#req-section`}>
+									Required Documents
+								</Link>
+								<Link href={`#add-section`}>
+									Admission Procedure
+								</Link>
+								<Link href={`#enr-section`}>
+									Enrollment Procedure
+								</Link>
+							</div>
+						</div>
+					</div>
+				</section>
 
 				<section className="bg-white w-full lg:2/3 p-8 flex flex-col gap-5 lg:gap-8 lg:py-14 max-w-full">
-					<Article title="Why Choose Us?" />
+					<article
+						id="choose-section"
+						className="flex flex-col gap-1 lg:gap-5 lg:mx-12 max-w-full"
+					>
+						<h1 className="text-2xl font-semibold font-heading text-[#00582C] lg:text-4xl lg:font-bold lg:mb-1">
+							Why Choose Us?
+						</h1>
+					</article>
 
 					<video
-						className="-my-4 lg:-my-8"
+						className="-mb-4 lg:-mb-8"
 						src="/videos/vid-admission.mp4"
 						autoPlay
 						muted
@@ -63,32 +106,43 @@ export default function Admissions() {
 					</Article>
 
 					<Article title="Programs Offered">
-						<SubArticle title="Pre-School Level">
-							<Image
-								className="py-1 pb-5"
-								src={`/images/add-pre-1.jpg`}
-								alt="pre-1-img"
-								width={1000}
-								height={500}
-							/>
-							ACCESSEDU, INC. (The NewFields STEM School of Davao)
-							has pioneered an innovative approach to early
-							childhood education by being the first institution
-							in Davao City to offer a comprehensive STEM
-							(Science, Technology, Engineering, and Mathematics)
-							curriculum starting from the Nursery level. This
-							trailblazing program is designed to cultivate
-							curiosity, critical thinking, and problem-solving
-							skills among young learners, setting a strong
-							foundation for their future academic and personal
-							growth.
-						</SubArticle>
+						<div
+							id="pre-section"
+							className="flex flex-col lg:gap-2"
+						>
+							<h2 className="font-heading text-lg text-[#017E3F] font-medium lg:text-2xl text-start">
+								Pre-School Level
+							</h2>
+							<div className="font-body text-[#333333] text-justify">
+								<Image
+									className="py-1 pb-5"
+									src={`/images/add-pre-1.jpg`}
+									alt="pre-1-img"
+									width={1000}
+									height={500}
+								/>
+								ACCESSEDU, INC. (The NewFields STEM School of
+								Davao) has pioneered an innovative approach to
+								early childhood education by being the first
+								institution in Davao City to offer a
+								comprehensive STEM (Science, Technology,
+								Engineering, and Mathematics) curriculum
+								starting from the Nursery level. This
+								trailblazing program is designed to cultivate
+								curiosity, critical thinking, and
+								problem-solving skills among young learners,
+								setting a strong foundation for their future
+								academic and personal growth.
+							</div>
+						</div>
+
 						<Image
 							src={`/images/add-pre-2.jpg`}
 							alt="pre-1-img"
 							width={1000}
 							height={500}
 						/>
+
 						<SubArticle>
 							By integrating STEM concepts into the preschool
 							curriculum, NewFields aims to nurture a generation
@@ -107,6 +161,7 @@ export default function Admissions() {
 							utilize age-appropriate software to develop early
 							computational skills.
 						</SubArticle>
+
 						<Image
 							src={`/images/add-pre-3.jpg`}
 							alt="pre-1-img"
@@ -141,28 +196,38 @@ export default function Admissions() {
 							STEM-focused world.
 						</SubArticle>
 
-						<SubArticle title="Grade School Level">
-							<Image
-								className="py-1 pb-5"
-								src={`/images/add-gra-1.jpg`}
-								alt="pre-1-img"
-								width={1000}
-								height={500}
-							/>
-							ACCESSEDU, INC. (The NewFields STEM School of Davao)
-							offers a dynamic and comprehensive grade school
-							program for students in Grades 1 through 6. Built on
-							the foundations of the Department of Education
-							(DEPED) curriculum guide and standards, this program
-							is enriched with specialized STEM (Science,
-							Technology, Engineering, and Mathematics) curriculum
-							designed to foster a deeper understanding and
-							appreciation of these fields from an early age. By
-							integrating these specialized elements, NewFields
-							aims to cultivate critical thinking, problem-solving
-							skills, and a passion for innovation among its young
-							learners.
-						</SubArticle>
+						<div
+							id="grade-section"
+							className="flex flex-col lg:gap-2"
+						>
+							<h2 className="font-heading text-lg text-[#017E3F] font-medium lg:text-2xl text-start">
+								Grade School Level
+							</h2>
+							<div className="font-body text-[#333333] text-justify">
+								<Image
+									className="py-1 pb-5"
+									src={`/images/add-gra-1.jpg`}
+									alt="pre-1-img"
+									width={1000}
+									height={500}
+								/>
+								ACCESSEDU, INC. (The NewFields STEM School of
+								Davao) offers a dynamic and comprehensive grade
+								school program for students in Grades 1 through
+								6. Built on the foundations of the Department of
+								Education (DEPED) curriculum guide and
+								standards, this program is enriched with
+								specialized STEM (Science, Technology,
+								Engineering, and Mathematics) curriculum
+								designed to foster a deeper understanding and
+								appreciation of these fields from an early age.
+								By integrating these specialized elements,
+								NewFields aims to cultivate critical thinking,
+								problem-solving skills, and a passion for
+								innovation among its young learners.
+							</div>
+						</div>
+
 						<Image
 							src={`/images/add-gra-2.jpg`}
 							alt="pre-1-img"
@@ -229,54 +294,78 @@ export default function Admissions() {
 						</SubArticle>
 					</Article>
 
-					<Article title="Required Documents">
-						<SubArticle title="For Pre school (Nursery to Kinder)">
-							<ul className="list-decimal text-md ps-6">
-								<li>PSA Birth Certificate - 2 photocopies</li>
-								<li>2x2 recent ID Picture - 2 pc</li>
-								<li>Php 200.00 Assessment Fee</li>
-								<li>Result of Assessment</li>
-							</ul>
-						</SubArticle>
+					<article
+						id="req-section"
+						className="flex flex-col gap-1 lg:gap-5 lg:mx-12 max-w-full"
+					>
+						<h1 className="text-2xl font-semibold font-heading text-[#00582C] lg:text-4xl lg:font-bold lg:mb-1">
+							Required Documents
+						</h1>
+						<div
+							className={`text-sm font-body text-[#333333] text-justify flex flex-col gap-1.5 lg:text-lg lg:gap-4`}
+						>
+							<SubArticle title="For Pre school (Nursery to Kinder)">
+								<ul className="list-decimal text-md ps-6">
+									<li>
+										PSA Birth Certificate - 2 photocopies
+									</li>
+									<li>2x2 recent ID Picture - 2 pc</li>
+									<li>Php 200.00 Assessment Fee</li>
+									<li>Result of Assessment</li>
+								</ul>
+							</SubArticle>
 
-						<SubArticle title="For Grade school">
-							<ul className="list-decimal ps-6">
-								<li>PSA Birth Certificate - 2 photocopies</li>
-								<li>2x2 recent ID Picture - 2 pc</li>
-								<li>
-									Photocopy of latest report card (current
-									school year)
-								</li>
-								<li>Php 200.00 Assessment Fee</li>
-								<li>Result of Assessment</li>
-							</ul>
-						</SubArticle>
+							<SubArticle title="For Grade school">
+								<ul className="list-decimal ps-6">
+									<li>
+										PSA Birth Certificate - 2 photocopies
+									</li>
+									<li>2x2 recent ID Picture - 2 pc</li>
+									<li>
+										Photocopy of latest report card (current
+										school year)
+									</li>
+									<li>Php 200.00 Assessment Fee</li>
+									<li>Result of Assessment</li>
+								</ul>
+							</SubArticle>
 
-						<div>
-							<h1 className="italic underline pb-2 lg:text-[24px]">
-								Note
-							</h1>
-							<ul className="list-disc ps-6 text-sm italic">
-								<li>
-									All applicants must pass the oral and
-									written assessment.
-								</li>
-								<li>
-									All applicants must have no grades below 80
-									in all subject areas (for elementary only).
-								</li>
-							</ul>
+							<div>
+								<h1 className="italic underline pb-2 lg:text-[24px]">
+									Note
+								</h1>
+								<ul className="list-disc ps-6 text-sm italic">
+									<li>
+										All applicants must pass the oral and
+										written assessment.
+									</li>
+									<li>
+										All applicants must have no grades below
+										80 in all subject areas (for elementary
+										only).
+									</li>
+								</ul>
+							</div>
 						</div>
-					</Article>
+					</article>
 
-					<Article title="Admission Procedure" />
+					<article
+						id="add-section"
+						className="flex flex-col gap-1 lg:gap-5 lg:mx-12 max-w-full"
+					>
+						<h1 className="text-2xl font-semibold font-heading text-[#00582C] lg:text-4xl lg:font-bold lg:mb-1">
+							Admission Procedure
+						</h1>
+					</article>
+
 					<Image
-						className="-my-4 lg:-my-8"
+						className="-mb-4 -mt-3 lg:-mb-8 lg:-mt-5"
 						src={`/images/add-addm.png`}
 						alt="admission"
 						width={1000}
 						height={1000}
 					/>
+
 					<Article>
 						<div>
 							<h1 className="italic underline pb-2 lg:text-[24px]">
@@ -300,12 +389,20 @@ export default function Admissions() {
 							</ul>
 						</div>
 					</Article>
-					<Article title="Enrollment Procedure" />
-					<div className="flex flex-col md:flex-row gap-4 -mt-4 lg:-mt-8">
+
+					<article
+						id="enr-section"
+						className="flex flex-col gap-1 lg:gap-5 lg:mx-12 max-w-full"
+					>
+						<h1 className="text-2xl font-semibold font-heading text-[#00582C] lg:text-4xl lg:font-bold lg:mb-1">
+							Enrollment Procedure
+						</h1>
+					</article>
+					<div className="flex flex-col md:flex-row gap-4 -mb-4 -mt-3 lg:-mb-8 lg:-mt-5">
 						<div>
 							<Image
 								src={`/images/add-cont.png`}
-								alt="admission"
+								alt="admission continuing"
 								width={1000}
 								height={1000}
 							/>
@@ -313,7 +410,7 @@ export default function Admissions() {
 						<div>
 							<Image
 								src={`/images/add-trans.png`}
-								alt="admission"
+								alt="admission transferee"
 								width={1000}
 								height={1000}
 							/>
