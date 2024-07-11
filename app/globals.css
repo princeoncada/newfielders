@@ -1847,8 +1847,16 @@ html {
   top: 0px;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
 .top-20 {
   top: 5rem;
+}
+
+.top-36 {
+  top: 9rem;
 }
 
 .top-\[6px\] {
@@ -2078,6 +2086,14 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.scroll-p-\[180px\] {
+  scroll-padding: 180px;
+}
+
+.scroll-p-\[150px\] {
+  scroll-padding: 150px;
+}
+
 .list-\[lower-alpha\] {
   list-style-type: lower-alpha;
 }
@@ -2176,8 +2192,16 @@ html {
   gap: 2rem;
 }
 
+.gap-3\.5 {
+  gap: 0.875rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-\[6px\] {
@@ -2259,16 +2283,6 @@ html {
 }
 
 .bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#ffffff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
@@ -2743,10 +2757,6 @@ html {
     background-position: right -8rem top -2rem;
   }
 
-  .md\:bg-\[right_-10rem_top_-6rem\] {
-    background-position: right -10rem top -6rem;
-  }
-
   .md\:p-4 {
     padding: 1rem;
   }
@@ -2808,6 +2818,10 @@ html {
     margin-bottom: 0.25rem;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -2844,16 +2858,16 @@ html {
     gap: 2rem;
   }
 
+  .lg\:gap-3 {
+    gap: 0.75rem;
+  }
+
   .lg\:border-b-\[3px\] {
     border-bottom-width: 3px;
   }
 
   .lg\:bg-docnap2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/DOCNAP2.png);
-  }
-
-  .lg\:bg-\[right_-10rem_top_-6rem\] {
-    background-position: right -10rem top -6rem;
   }
 
   .lg\:bg-\[center_left_8rem\] {
@@ -3035,20 +3049,8 @@ html {
     gap: 2rem;
   }
 
-  .xl\:bg-docnap2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/DOCNAP2.png);
-  }
-
-  .xl\:bg-\[center_left_8rem\] {
-    background-position: center left 8rem;
-  }
-
   .xl\:p-\[107px\] {
     padding: 107px;
-  }
-
-  .xl\:p-\[56px\] {
-    padding: 56px;
   }
 
   .xl\:px-6 {
@@ -3074,11 +3076,6 @@ html {
   .xl\:py-\[14px\] {
     padding-top: 14px;
     padding-bottom: 14px;
-  }
-
-  .xl\:py-\[70px\] {
-    padding-top: 70px;
-    padding-bottom: 70px;
   }
 
   .xl\:py-\[80px\] {

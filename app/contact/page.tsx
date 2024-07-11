@@ -4,6 +4,7 @@ import Article from "../components/Article";
 import SubArticle from "../components/SubArticle";
 import QuickLinks from "../components/QuickLinks";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Contact() {
 	return (
@@ -11,7 +12,34 @@ export default function Contact() {
 			<Hero title="Contact Us" />
 
 			<div className="flex flex-row px-8 lg:px-28 h-auto relative bottom-16 gap-5 max-w-[1280px] mx-auto">
-				<QuickLinks currentPage="contact" />
+				<section className="hidden lg:block w-1/3">
+					<div className="flex flex-col gap-5 sticky top-36">
+						<Link
+							href={`/admission`}
+							className="w-full"
+						>
+							<Image
+								src={`/svg/Admission.svg`}
+								width={1000}
+								height={1000}
+								alt="admission-cta"
+							/>
+						</Link>
+						<div className="flex flex-col gap-4 w-full">
+							<h1 className="font-heading text-[#00582C] text-[28px] font-medium">
+								Quick Links
+							</h1>
+							<div className="flex flex-col gap-2 font-body text-[#333333] text-[18px]">
+								<Link href={`#`}>Home</Link>
+								<Link href={`#`}>About Us</Link>
+								<Link href={`#`}>Admission</Link>
+								<Link href={`#`}>Events</Link>
+								<Link href={`#`}>NewFielders Life</Link>
+								<Link href={`#`}>Contact Us</Link>
+							</div>
+						</div>
+					</div>
+				</section>
 
 				<section className="bg-white w-full lg:2/3 p-8 flex flex-col gap-5 lg:gap-8 lg:py-14">
 					<Article>
@@ -102,11 +130,13 @@ export default function Contact() {
 										className="w-full rounded-[6px] form-input border border-b-2 lg:border-b-[3px] border-gray-900 py-2 bg-white placeholder:text-[#555555] text-black appearance-none block pl-[32px] pr-[12px] lg:pl-[40px] focus:outline-none text-[16px]"
 									></textarea>
 								</label>
-                                <button className="bg-[#017E3F] text-white p-2.5 px-8 mt-1 lg:text-lg font-bold lg:py-3 lg:px-16">Submit</button>
+								<button className="bg-[#017E3F] text-white p-2.5 px-8 mt-1 lg:text-lg font-bold lg:py-3 lg:px-16">
+									Submit
+								</button>
 							</form>
 						</SubArticle>
 
-                        <div></div>
+						<div></div>
 
 						<SubArticle title="Contact Us Directly">
 							<div className="pt-2">
@@ -161,7 +191,6 @@ export default function Contact() {
 								<p>Tacunan, Davao City, Davao del Sur, 8000</p>
 							</div>
 						</SubArticle>
-
 					</Article>
 					<Image
 						className="py-2"

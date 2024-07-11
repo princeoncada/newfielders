@@ -12,7 +12,7 @@ export default function Founder() {
 							education. &quot;
 						</p>
 						<p className="text-center text-xs md:text-start xl:text-[12px]">
-							Princess Ceno | President
+							Dr. Napoleon K. Juanillo Jr. | Founder
 						</p>
 					</div>
 				</div>

@@ -25,10 +25,10 @@ export default function Header() {
 					</div>
 					<div>
 						<div className="text-lg font-medium text-[#00582C]">
-							The NewFields STEM
+							The NewFields STEM School of Davao
 						</div>
 						<div className="text-sm text-[#333333]">
-							School of Davao
+							Operated by ACCESSEDU, INC.
 						</div>
 					</div>
 				</div>
@@ -82,10 +82,10 @@ export default function Header() {
 						</div>
 						<div className="flex flex-col justify-center">
 							<div className="text-[24px] font-medium text-[#00582C]">
-								The NewFields STEM
+								The NewFields STEM School of Davao
 							</div>
 							<div className="text-[16px] text-[#333333]">
-								School of Davao
+								Operated by ACCESSEDU, INC.
 							</div>
 						</div>
 					</Link>
