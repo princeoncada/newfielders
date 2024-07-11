@@ -2284,6 +2284,16 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#2e2727\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 39 39 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#4b1b1b\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 27 27 / var(--tw-bg-opacity));
+}
+
 .bg-b-workshop {
   background-image: url(/images/G66.jpg);
 }
@@ -2415,6 +2425,21 @@ html {
   padding-bottom: 1rem;
 }
 
+.py-\[50px\] {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.py-\[100px\] {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.py-\[64px\] {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -2457,6 +2482,14 @@ html {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
+.pt-\[50px\] {
+  padding-top: 50px;
 }
 
 .text-center {
