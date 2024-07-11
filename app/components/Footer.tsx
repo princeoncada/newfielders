@@ -17,7 +17,7 @@ export default function Footer() {
 				<div>
 					P9B, BLK 44, LOTS 7-16, DECA Homes
 					<br />
-					Tacunan, Davao City, Daval del Sur, 8000
+					Tacunan, Davao City, Davao del Sur, 8000
 				</div>
 				<div>
 					Landline: (082) 291 - 5036
@@ -65,7 +65,7 @@ export default function Footer() {
 						<div>
 							P9B, BLK 44, LOTS 7-16, DECA Homes
 							<br />
-							Tacunan, Davao City, Daval del Sur, 8000
+							Tacunan, Davao City, Davao del Sur, 8000
 						</div>
 						<div>
 							Landline: (082) 291 - 5036
