@@ -13,7 +13,7 @@ export default function About() {
 
 			<div className="flex flex-row px-8 lg:px-28 h-auto relative bottom-16 gap-5 max-w-[1280px] mx-auto">
 				<section className="hidden lg:block w-1/3">
-					<div className="flex flex-col gap-5 sticky top-36">
+					<div className="flex flex-col gap-5 sticky top-28">
 						<Link href={`/contact`} className="w-full">
 							<Image
 								src={`/svg/Contact Us.svg`}

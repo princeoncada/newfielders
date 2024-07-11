@@ -23,32 +23,32 @@ export default function Header() {
 							height="100"
 						/>
 					</div>
-					<div>
-						<div className="text-lg font-medium text-[#00582C]">
+					<div className="flex flex-col justify-center">
+						<div className="text-sm font-medium text-[#00582C]">
 							The NewFields STEM School of Davao
 						</div>
-						<div className="text-sm text-[#333333]">
+						<div className="text-[10px] text-[#333333]">
 							Operated by ACCESSEDU, INC.
 						</div>
 					</div>
 				</div>
 				<button
 					onClick={handleClick}
-					className="flex flex-col justify-center items-end gap-1.5"
+					className="flex flex-col justify-center items-end gap-1"
 				>
 					<div
-						className={`w-8 h-1 bg-black transition-all duration-300 ease-in-out ${
-							showMenu ? "-rotate-45 translate-y-2.5" : ""
+						className={`w-6 h-1 bg-black transition-all duration-300 ease-in-out ${
+							showMenu ? "-rotate-45 translate-y-2" : ""
 						}`}
 					></div>
 					<div
 						className={`h-1 bg-black transition-all duration-300 ease-in-out ${
-							showMenu ? "w-0" : "w-8"
+							showMenu ? "w-0" : "w-6"
 						}`}
 					></div>
 					<div
-						className={`w-8 h-1 bg-black transition-all duration-300 ease-in-out ${
-							showMenu ? "rotate-45 -translate-y-2.5" : ""
+						className={`w-6 h-1 bg-black transition-all duration-300 ease-in-out ${
+							showMenu ? "rotate-45 -translate-y-2" : ""
 						}`}
 					></div>
 				</button>
@@ -76,12 +76,12 @@ export default function Header() {
 							<Image
 								src="/images/TNFSSD LOGO.png"
 								alt="none"
-								width="100"
-								height="100"
+								width="70"
+								height="70"
 							/>
 						</div>
 						<div className="flex flex-col justify-center">
-							<div className="text-[24px] font-medium text-[#00582C]">
+							<div className="text-[20px] font-medium text-[#00582C]">
 								The NewFields STEM School of Davao
 							</div>
 							<div className="text-[16px] text-[#333333]">
@@ -89,7 +89,7 @@ export default function Header() {
 							</div>
 						</div>
 					</Link>
-					<div className="flex flex-row items-center gap-8 text-[#017E3F] text-[1rem]">
+					<div className="flex flex-row items-center gap-6 text-[#017E3F] text-[14.5px]">
 						<Link href="/">Home</Link>
 						<Link href="/about">About Us</Link>
 						<Link href="/admission">Admissions</Link>
