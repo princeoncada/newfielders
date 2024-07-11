@@ -411,7 +411,8 @@ export default function About() {
 						</p>
 					</Article>
 
-					<video src="/videos/vid-about.mp4" autoPlay muted loop controls width="100%" />
+					<video className="hidden lg:block" src="/videos/vid-about.mp4" autoPlay muted loop controls width="100%" />
+					<video className="lg:hidden" src="/videos/vid-about.mp4" muted loop controls width="100%" />
 				</section>
 			</div>
 			<CTA />

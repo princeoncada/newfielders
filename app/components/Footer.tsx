@@ -4,6 +4,7 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <>
+            {/* mobile view */}
             <footer className="bg-[#028141] text-white font-heading p-5 py-10 text-[14px] xl:hidden flex flex-col gap-5">
                 <div><Image src="/images/TNFSSD LOGO.png" alt="none" width="100" height="100"/></div>
                 <div>
@@ -36,7 +37,8 @@ export default function Footer() {
                 </div>
             </footer>
 
-            <footer className="bg-[#028141] text-white h-[320px] font-heading p-5 text-sm hidden xl:flex flex-row justify-evenly items-center">
+            {/* desktop view */}
+            <footer className="bg-[#028141] text-white h-[250px] font-heading p-5 text-sm hidden xl:flex flex-row justify-evenly items-center">
                 <div><Image src="/images/TNFSSD LOGO.png" alt="none" width="180" height="100"/></div>
                 <div className="flex flex-col justify-between h-[140px] text-center">
                     <div>
