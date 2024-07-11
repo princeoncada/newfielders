@@ -10,7 +10,7 @@ export default function Contact() {
 		<div className="bg-[#F0F0F0]">
 			<Hero title="Contact Us" />
 
-			<div className="flex flex-row px-8 lg:px-28 h-auto relative bottom-16 gap-5">
+			<div className="flex flex-row px-8 lg:px-28 h-auto relative bottom-16 gap-5 max-w-[1280px] mx-auto">
 				<QuickLinks currentPage="contact" />
 
 				<section className="bg-white w-full lg:2/3 p-8 flex flex-col gap-5 lg:gap-8 lg:py-14">

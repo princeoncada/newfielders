@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function News() {
     return (
 		<section className="p-12 xl:px-[96px] xl:py-[80px] font-heading bg-[#F0F0F0]">
-			<div className="flex flex-col gap-8">
+			<div className="flex flex-col gap-8 max-w-[1280px] mx-auto">
 				<h1 className="text-2xl font-bold mb-2 text-[#028141] xl:text-[48px] xl:mb-1">
 					News & Updates
 				</h1>

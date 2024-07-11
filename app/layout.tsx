@@ -35,7 +35,7 @@ export default function RootLayout({
             <head>
               <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
             </head>
-            <body className="container mx-auto max-w-[1280px] bg-gray-100">
+            <body className=" bg-gray-100 relative">
               <Header /> 
               {children}
               <Footer />

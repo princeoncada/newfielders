@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Content() {
     return (
 		<section>
-			<div className="flex flex-col md:flex-row">
+			<div className="flex flex-col md:flex-row max-w-[1280px] mx-auto">
 				<div
 					className="w-full h-[100vw] md:h-auto md:w-1/2 bg-cover bg-center"
 					style={{

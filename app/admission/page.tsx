@@ -10,7 +10,7 @@ export default function Admissions() {
 		<div className="bg-[#F0F0F0] max-w-full">
 			<Hero title="Admissions" />
 
-			<div className="flex flex-row px-8 lg:px-28 h-auto relative bottom-16 gap-5 max-w-full">
+			<div className="flex flex-row px-8 lg:px-28 h-auto relative bottom-16 gap-5 max-w-[1280px] mx-auto">
 				<QuickLinks currentPage="admission" />
 
 				<section className="bg-white w-full lg:2/3 p-8 flex flex-col gap-5 lg:gap-8 lg:py-14 max-w-full">

@@ -10,7 +10,7 @@ export default function About() {
 		<div className="bg-[#F0F0F0]">
 			<Hero title="About Us" />
 
-			<div className="flex flex-row px-8 lg:px-28 h-auto relative bottom-16 gap-5">
+			<div className="flex flex-row px-8 lg:px-28 h-auto relative bottom-16 gap-5 max-w-[1280px] mx-auto">
 				<QuickLinks />
 
 				<section className="bg-white w-full lg:2/3 p-8 flex flex-col gap-5 lg:gap-8 lg:py-14">
@@ -411,8 +411,7 @@ export default function About() {
 						</p>
 					</Article>
 
-					<video className="hidden lg:block" src="/videos/vid-about.mp4" autoPlay muted loop controls width="100%" />
-					<video className="lg:hidden" src="/videos/vid-about.mp4" muted loop controls width="100%" />
+					<video src="/videos/vid-about.mp4" autoPlay muted loop controls width="100%" />
 				</section>
 			</div>
 			<CTA />

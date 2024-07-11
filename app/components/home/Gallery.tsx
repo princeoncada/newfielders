@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Gallery() {
 	return (
 		<section className="p-12 xl:px-[96px] xl:py-[80px] font-heading">
-			<div>
+			<div className="max-w-[1280px] mx-auto">
 				<h1 className="text-2xl font-bold mb-2 text-[#028141] xl:text-[48px] xl:mb-5">
 					Gallery
 				</h1>
