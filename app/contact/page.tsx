@@ -1,11 +1,52 @@
+"use client"
+
 import Hero from "../components/Hero";
 import CTA from "../components/CTA";
-import Article from "../components/Article";
 import SubArticle from "../components/SubArticle";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Contact() {
+
+	const [formData, setFormData] = useState({
+		name: "",
+		email: "",
+		phone: "",
+		subject: "",
+		message: "",
+	});
+
+	const handleChange = (e: { target: { name: any; value: any } }) => {
+	setFormData({ ...formData, [e.target.name]: e.target.value });
+	};
+
+	const handleSubmit = async (e: { preventDefault: () => void }) => {
+	e.preventDefault();
+
+	try {
+		const response = await fetch("/contact/api/send", {
+		// Adjust the API route as necessary
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(formData),
+		});
+		const data = await response.json();
+
+		if (data.message) {
+		alert("Email sent successfully!");
+		} else {
+		alert("Failed to send email.");
+		}
+
+	} catch (error) {
+		console.error("Failed to send email:", error);
+		alert("An error occurred while sending the email.");
+	}
+	};
+
 	return (
 		<div className="bg-[#F0F0F0]">
 			<Hero title="Contact Us" />
@@ -49,7 +90,7 @@ export default function Contact() {
 							className={`text-sm font-body text-[#333333] text-justify flex flex-col gap-1.5 lg:text-lg lg:gap-10`}
 						>
 							<SubArticle title="Send us a Message">
-								<form className="flex flex-col mt-1 gap-1 lg:gap-2 items-start">
+								<form onSubmit={handleSubmit} className="flex flex-col mt-1 gap-1 lg:gap-2 items-start">
 									<label className="relative text-gray-400 focus-within:text-gray-600 flex flex-row justify-start w-full">
 										<Image
 											className="pointer-events-none w-6 h-6 text-red-300 absolute top-[6px] left-[6px] lg:top-[11px] lg:left-[11px]"
@@ -60,9 +101,11 @@ export default function Contact() {
 										/>
 
 										<input
-											name="email"
-											id="email"
+											name="name"
+											id="name"
 											placeholder="Name"
+											value={formData.name}
+											onChange={handleChange}
 											className="w-full rounded-[6px] form-input border border-b-2 lg:border-b-[3px] border-gray-900 py-2 bg-white placeholder:text-[#555555] text-black appearance-none block pl-[32px] lg:pl-[40px] focus:outline-none text-[16px]"
 										/>
 									</label>
@@ -79,6 +122,8 @@ export default function Contact() {
 											name="email"
 											id="email"
 											placeholder="Email"
+											value={formData.email}
+											onChange={handleChange}
 											className="w-full rounded-[6px] form-input border border-b-2 lg:border-b-[3px] border-gray-900 py-2 bg-white placeholder:text-[#555555] text-black appearance-none block pl-[32px] lg:pl-[40px] focus:outline-none text-[16px]"
 										/>
 									</label>
@@ -92,9 +137,11 @@ export default function Contact() {
 										/>
 
 										<input
-											name="email"
-											id="email"
+											name="phone"
+											id="phone"
 											placeholder="Phone Number"
+											value={formData.phone}
+											onChange={handleChange}
 											className="w-full rounded-[6px] form-input border border-b-2 lg:border-b-[3px] border-gray-900 py-2 bg-white placeholder:text-[#555555] text-black appearance-none block pl-[32px] lg:pl-[40px] focus:outline-none text-[16px]"
 										/>
 									</label>
@@ -108,9 +155,11 @@ export default function Contact() {
 										/>
 
 										<input
-											name="email"
-											id="email"
+											name="subject"
+											id="subject"
 											placeholder="Subject"
+											value={formData.subject}
+											onChange={handleChange}
 											className="w-full rounded-[6px] form-input border border-b-2 lg:border-b-[3px] border-gray-900 py-2 bg-white placeholder:text-[#555555] text-black appearance-none block pl-[32px] lg:pl-[40px] focus:outline-none text-[16px]"
 										/>
 									</label>
@@ -124,10 +173,12 @@ export default function Contact() {
 										/>
 
 										<textarea
-											name="email"
-											id="email"
+											name="message"
+											id="message"
 											placeholder="Message"
 											rows={10}
+											value={formData.message}
+											onChange={handleChange}
 											className="w-full rounded-[6px] form-input border border-b-2 lg:border-b-[3px] border-gray-900 py-2 bg-white placeholder:text-[#555555] text-black appearance-none block pl-[32px] pr-[12px] lg:pl-[40px] focus:outline-none text-[16px]"
 										></textarea>
 									</label>
